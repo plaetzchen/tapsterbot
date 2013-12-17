@@ -128,8 +128,8 @@ function handler(req, res) {
   if (req.url == "/control") {
     file = "/control.html";
   }
-  if (req.url == "/screen.png") {
-    file = "/screen.png";
+  if (req.url == "/tweetscreen.png") {
+    file = "/tweetscreen.png";
     type = "image/png";
   }
 
