@@ -5,6 +5,9 @@ board = new five.Board({
 });
 require("sylvester");
 
+var clientSocket;
+var calibrated;
+
 var app = require('http').createServer(handler),
   io = require('socket.io').listen(app, {
     log: false
@@ -33,6 +36,13 @@ var app = require('http').createServer(handler),
     servo1.move(min);
     servo2.move(min);
     servo3.move(min);
+    
+    // Notifying the connected client that the board is ready
+    if (clientSocket) {
+        clientSocket.emit('status', {
+            ready: board.ready
+        });
+    }
 
     var dance = function() {
       servo1.move(parseInt((Math.random() * range) + min, 10));
@@ -167,11 +177,22 @@ io.sockets.on('connection', function(socket) {
     deviceGo(position.x, position.y, 0);
     setTimeout(function() {
       moveZ(downZ);
+      socket.emit('tapped', {
+        position: position
+      });
+
     }, 100);
   });
 
   socket.on('up', function() {
     moveZ(safeZ);
+  });
+  
+  // let the client ask for the board status
+  socket.on('get_status', function() {
+    socket.emit('status', {
+      ready: board.ready && calibrated
+    });
   });
 });
 
@@ -260,6 +281,8 @@ calibrate = function() {
         doIt();
         if (iter == 2) {
           calculateTranslation();
+          isCalibrating = false;
+          calibrated = true;
         }
       }
     });
