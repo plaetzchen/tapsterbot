@@ -36,6 +36,8 @@ var app = require('http').createServer(handler),
     servo1.move(min);
     servo2.move(min);
     servo3.move(min);
+
+    readCalibrationIfNeeded();
     
     // Notifying the connected client that the board is ready
     if (clientSocket) {
@@ -248,6 +250,9 @@ calculateTranslation = function() {
 }
 
 calibrate = function() {
+  botPlane = [];
+  devicePlane = [];
+  downZ = 0;
   var isCalibrating = true,
     x = position()[1],
     y = position()[2],
@@ -281,9 +286,12 @@ calibrate = function() {
         doIt();
         if (iter == 2) {
           calculateTranslation();
+        }
+      } else {
           isCalibrating = false;
           calibrated = true;
-        }
+          writeToCalibrationFile(JSON.stringify({devPlane: devicePlane, bPlane: botPlane, dZ: downZ}));
+          console.log("Wrote calibration file calibration.js")
       }
     });
   }
@@ -310,4 +318,29 @@ moveDownUntilTap = function(err, callback) {
   }, 500);
 }
 
+// Writing calibration file helper
+writeToCalibrationFile = function(data) {
+    var fs = require('fs');
+    fs.writeFile("calibration.js", data, function(err) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Calibration file was saved");
+        }
+    });
+}
 
+// Getting calibration file from command line
+var argv = require('optimist').argv;
+readCalibrationIfNeeded = function() {
+    if (argv.calibration) {
+        calibration = JSON.parse(fs.readFileSync(argv.calibration));
+        devicePlane = calibration["devPlane"];
+        botPlane = calibration["bPlane"];
+        calculateTranslation();
+        downZ = calibration["dZ"]
+        safeZ = position()[3];
+        calibrated = true;
+        console.log("Loaded calibration file ",argv.calibration)
+    }
+}

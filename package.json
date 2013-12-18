@@ -32,7 +32,8 @@
    "dependencies":{
       "johnny-five":"latest",
       "socket.io":"0.9.11",
-      "sylvester":"0.0.21"
+      "sylvester":"0.0.21",
+      "optimist":"0.6.0"
    },
    "devDependencies":{
       "grunt-contrib-jasmine":"~0.4.0",
