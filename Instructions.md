@@ -4,6 +4,8 @@ Building Instructions
 Robot
 ---
 
+***Before building the robot you should connect the electronics once and run dance(); to make sure everything is working***
+
 
 Electronics
 ----
