@@ -16,7 +16,7 @@ Take your Arduino and your Arduino ProtoShield out of their boxes and stack the 
 
 Insert a row of three male headers into the Servo's conenctor and connect the servos to the breadboard. See this plan on how to connect the everything with jumper cables:
 
-![Connection plan](connectingplan.jpg)
+![Connection plan](instruction_imgs/connectingplan.jpg)
 
 Installing Firmware
 ----
