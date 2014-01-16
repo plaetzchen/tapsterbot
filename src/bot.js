@@ -253,6 +253,7 @@ calibrate = function() {
   botPlane = [];
   devicePlane = [];
   downZ = 0;
+  tapped  = false;
   var isCalibrating = true,
     x = position()[1],
     y = position()[2],
