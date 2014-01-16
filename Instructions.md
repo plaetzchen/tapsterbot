@@ -6,6 +6,12 @@ Robot
 
 ***Before building the robot you should connect the electronics once and run dance(); to make sure everything is working***
 
+<h3>Base</h3>
+Take the base plate and fix three 5x1 beams to the base plate using M5 20mm/10-32 3/4 inch screws and normal nuts. Connect the side panels to those beams using the same combination of screws and nuts.
+
+<h3>Top and Arm</h3>
+
+
 
 Electronics
 ----
