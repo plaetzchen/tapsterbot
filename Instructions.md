@@ -25,7 +25,7 @@ Connect two arms to each connector of the stylus holder. Use the M5 30mm/10-32 1
 
 [![Servo mount](instruction_imgs/servomount_small.jpg)](instruction_imgs/servomount.jpg)
 
-Connect the upper arm to each of the three arms connected to the stylus holder. Use the M5 30mm/10-32 1 1/4 inch screws and lock nuts. Connect each servo to the upper arm using the screws that came with the servo. The servo should be parked in its zero point when doing this and you need to screw the 2-side horn on the servo (see the servo's instructions). Use the second hole on each side of the horn for the screws. (Please note that the screws on the end of the arm are upside-down.)
+Connect the upper arm to each of the three arms connected to the stylus holder. Use the M5 30mm/10-32 1 1/4 inch screws and lock nuts. Connect each servo to the upper arm using the screws that came with the servo. The servo should be parked in its zero point when doing this and you need to screw the 2-side horn on the servo (see the servo's instructions). Use the second hole on each side of the horn for the screws. (Please note that the screws on the end of the arm are upside-down in the upper picture.)
 
 [![Connecting servo holders](http://farm3.staticflickr.com/2823/9312698006_08e27dc15e_m.jpg)](http://www.flickr.com/photos/99107062@N08/9312698006/in/set-72157634689374194/)
 
