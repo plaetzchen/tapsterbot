@@ -35,12 +35,12 @@ Fix the servo mounts to the servos using a M3 18 mm / 6-32 3/4 inch screw and th
 
 [![Top with servo mount points](http://farm6.staticflickr.com/5348/9312699394_d204fed47c_m.jpg)](http://www.flickr.com/photos/99107062@N08/9312699394/in/set-72157634689374194/)
 
-Connect three 9x1 beams to the top plate using the M5 20 mm / 10-32 3/4 screws and low-profile nuts. The screw head should be upper surface of the top plate.
+Connect three 9x1 beams to the top plate using the M5 20 mm / 10-32 3/4 screws and low-profile nuts. The screw head should be on the upper surface of the top plate.
 
 [![Connected actuator](http://farm6.staticflickr.com/5340/9312695064_9e1f132294_m.jpg)](http://www.flickr.com/photos/99107062@N08/9312695064/in/set-72157634689374194/)
 
 Connect the servo mounts to the 9x1 beams using M5 25 mm / 10-32 1 inch screws and low-profile nuts. Run the servo cables in the hole of the top plate. Please make sure that the servo horns are all facing to the right side and each servo mount is mounted to the left side of the 9x1 beam.
-Also note that the 17x1 plates are facing to the outside and the screws heads on the stylus mount  
+Also note that the 17x1 plates are facing to the outside and the screw heads on the stylus mount are facing to the inside.
 
 If you connected it the right way the arm should be movable in each direction without any colliding screws or similar.
 
@@ -66,7 +66,7 @@ Mount the Arduino to the Arduino plate using the A2 M2.5 12mm / 4-40 1/2 inch sc
 
 [![The Arduino fixed to the top plate](http://farm4.staticflickr.com/3665/9312694218_57eeff4650_m.jpg)](http://www.flickr.com/photos/99107062@N08/9312694218/in/set-72157634689374194/)
 
-Mount two 9x1 beams and the Arduino plate on the top using M5 25 mm / 10-32 1 inch screws and low-profile nuts.
+Mount two 9x1 beams and the Arduino plate on the top plate using M5 25 mm / 10-32 1 inch screws and low-profile nuts.
 
 Electronics
 ----
