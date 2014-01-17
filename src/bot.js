@@ -254,6 +254,8 @@ calibrate = function() {
   devicePlane = [];
   downZ = 0;
   tapped  = false;
+  go(0,0,0);
+    
   var isCalibrating = true,
     x = position()[1],
     y = position()[2],
@@ -277,8 +279,8 @@ calibrate = function() {
       iter += 1;
       if (iter <= 2) {
         if (iter == 1) {
-          x += 20;
-          y += 20;
+          x += 15;
+          y += 15;
         }
         if (iter == 2) {
           x -= 30;
