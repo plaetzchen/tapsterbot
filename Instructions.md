@@ -29,7 +29,7 @@ Connect the upper arm to each of the three arms connected to the stylus holder. 
 
 [![Connecting servo holders](http://farm3.staticflickr.com/2823/9312698006_08e27dc15e_m.jpg)](http://www.flickr.com/photos/99107062@N08/9312698006/in/set-72157634689374194/)
 
-Fix the servo mounts to the servos using a M3 18 mm / 6-32 3/4 inch screw and the equivalent nuts for each side. (Note that that the upper arm was exchanged for a 9x1 beam in the picture.)
+Fix the servo mounts to the servos using a M3 18 mm / 6-32 3/4 inch screw and the equivalent nuts for each side. (Note that the upper arm was exchanged for a 9x1 beam in the picture.)
 
 <h3>Top</h3>
 
