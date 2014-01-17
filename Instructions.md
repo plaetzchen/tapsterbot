@@ -52,6 +52,12 @@ Connect a 5x1 beam to each of the side parts using M5 20 mm / 10-32 3/4 inch scr
 
 Fix the top with the actuator to the rest of the casing using M5 20 mm / 10-32 3/4 inch screws and low-profile nuts.
 
+<h3>Stylus</h3>
+
+[![Stylus](http://farm3.staticflickr.com/2829/9315900080_f96e76ce30_m.jpg)](http://www.flickr.com/photos/99107062@N08/9315900080/)
+
+Insert the stylus into the stylus mount. You may need to use tape on the stylus or a rasp to insure a tight fit.
+
 <h3>Arduino mount</h3>
 
 [![Arduino with Arduino plate](http://farm6.staticflickr.com/5546/9312694432_073b253282_m.jpg)](http://www.flickr.com/photos/99107062@N08/9312694432/in/set-72157634689374194/)
